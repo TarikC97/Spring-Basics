@@ -5,7 +5,7 @@
 
     <!-- bean definitions here -->
 
-    <bean id="student" class="com.tarikc.Student">
+    <bean id="student" class="com.tarikc.Student" scope="prototype">
 
     </bean>
 
