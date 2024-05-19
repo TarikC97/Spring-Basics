@@ -12,11 +12,12 @@ public class App
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
         Student stud =(Student) context.getBean("student");
-        stud.age=21;
-        System.out.println(stud.age);
-
-        Student stud2 =(Student) context.getBean("student");
-        System.out.println(stud2.age);
+//        stud.setAge(21);
+        System.out.println(stud.getAge());
         stud.code();
+
+//        Student stud2 =(Student) context.getBean("student");
+//        System.out.println(stud2.age);
+//        stud.code();
     }
 }
