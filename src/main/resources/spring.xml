@@ -8,6 +8,7 @@
 <!--    <bean id="student" class="com.tarikc.Student" scope="prototype">-->
     <bean id="student" class="com.tarikc.Student" >
         <property name="age" value="115"></property>
+        <property name="laptop"></property>
     </bean>
 
 </beans>
