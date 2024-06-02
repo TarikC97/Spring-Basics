@@ -19,5 +19,6 @@ public class App
 //        Student stud2 =(Student) context.getBean("student");
 //        System.out.println(stud2.age);
 //        stud.code();
+//
     }
 }
