@@ -8,9 +8,9 @@
 <!--    <bean id="student" class="com.tarikc.Student" scope="prototype">-->
     <bean id="student" class="com.tarikc.Student" >
         <property name="age" value="115"></property>
-<!--        <property name="laptop"></property>-->
+        <property name="laptop" ref="laptop1"></property>
     </bean>
-    <bean id="laptop" class="com.tarikc.Laptop">
+    <bean id="laptop1" class="com.tarikc.Laptop">
 
     </bean>
 

@@ -2,10 +2,6 @@ package com.tarikc;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
@@ -17,7 +13,7 @@ public class App
         stud.code();
 
 //        Student stud2 =(Student) context.getBean("student");
-//        System.out.println(stud2.age);
+//        System.out.println(stud2.getAge());
 //        stud.code();
 //
     }
