@@ -9,7 +9,7 @@ public class App
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
         Student stud =(Student) context.getBean("student");
 //        stud.setAge(21);
-//        System.out.println(stud.getAge());
+        System.out.println(stud.getAge());
         stud.code();
 
 //        Student stud2 =(Student) context.getBean("student");

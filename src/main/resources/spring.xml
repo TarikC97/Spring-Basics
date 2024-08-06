@@ -7,8 +7,9 @@
 
 <!--    <bean id="student" class="com.tarikc.Student" scope="prototype">-->
     <bean id="student" class="com.tarikc.Student" >
-        <property name="age" value="115"></property>
-        <property name="laptop" ref="laptop1"></property>
+<!--        <property name="age" value="115"></property>-->
+        <constructor-arg value="21" />
+        <property name="laptop" ref="laptop1" />
     </bean>
     <bean id="laptop1" class="com.tarikc.Laptop">
 

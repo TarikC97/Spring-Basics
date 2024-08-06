@@ -5,6 +5,12 @@ public class Student {
     private int age;
     private Laptop laptop;
 
+    public Student(int age){
+         this.age = age;
+         System.out.println("Params Constructor");
+    }
+
+
     public Laptop getLaptop() {
         return laptop;
     }
