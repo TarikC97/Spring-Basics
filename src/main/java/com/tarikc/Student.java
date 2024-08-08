@@ -3,26 +3,13 @@ package com.tarikc;
 public class Student {
 
     private int age;
-    private Laptop laptop;
+    private Computer comp;
 
-    public Student(int age){
+    public Student(int age,Computer comp){
          this.age = age;
+         this.comp = comp;
          System.out.println("Params Constructor");
     }
-
-
-    public Laptop getLaptop() {
-        return laptop;
-    }
-
-    public void setLaptop(Laptop laptop) {
-        this.laptop = laptop;
-    }
-
-    public Student(){
-        System.out.println("Object created!");
-    }
-
     public int getAge() {
         return age;
     }
@@ -31,10 +18,16 @@ public class Student {
         System.out.println("Setter called");
         this.age = age;
     }
+    public Computer getComp() {
+        return comp;
+    }
+    public void setComp(Computer comp) {
+        this.comp = comp;
+    }
 
     public void code(){
         System.out.println("Coding");
-        laptop.compile();
+        comp.compile();
     }
 
 }
