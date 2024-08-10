@@ -6,16 +6,16 @@
     <!-- bean definitions here -->
 
 <!--    <bean id="student" class="com.tarikc.Student" scope="prototype">-->
-    <bean id="student" class="com.tarikc.Student" >
+    <bean id="student" class="com.tarikc.Student" autowire="byName" >
 <!--        <property name="age" value="115"></property>-->
 <!--        <constructor-arg type="com.tarikc.Laptop" ref="laptop1" />-->
 <!--        <constructor-arg value="21" />-->
-        <constructor-arg index="1" ref="laptop1" />
-        <constructor-arg index="0" value="115" />
-        <property name="laptop" ref="laptop1" />
+<!--        <constructor-arg index="1" ref="laptop1" />-->
+<!--        <constructor-arg index="0" value="115" />-->
+        <property name="age" value="115" />
+<!--        <property name="comp" ref="comp" />-->
     </bean>
-    <bean id="laptop1" class="com.tarikc.Laptop">
-
+    <bean id="comp" class="com.tarikc.Laptop">
     </bean>
 
 </beans>
