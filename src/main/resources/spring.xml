@@ -6,7 +6,7 @@
     <!-- bean definitions here -->
 
 <!--    <bean id="student" class="com.tarikc.Student" scope="prototype">-->
-    <bean id="student" class="com.tarikc.Student" autowire="byName" >
+    <bean id="student" class="com.tarikc.Student" autowire="byType" >
 <!--        <property name="age" value="115"></property>-->
 <!--        <constructor-arg type="com.tarikc.Laptop" ref="laptop1" />-->
 <!--        <constructor-arg value="21" />-->
@@ -15,7 +15,9 @@
         <property name="age" value="115" />
 <!--        <property name="comp" ref="comp" />-->
     </bean>
-    <bean id="comp" class="com.tarikc.Laptop">
+    <bean id="comp" class="com.tarikc.Laptop" primary="true">
+    </bean>
+    <bean id="comp2" class="com.tarikc.Desktop" lazy-init="true">
     </bean>
 
 </beans>
