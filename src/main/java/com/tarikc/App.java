@@ -16,6 +16,6 @@ public class App
 //        System.out.println(stud2.getAge());
 //        stud.code();
 //
-        Desktop desk =(Desktop) context.getBean("comp2");
+        Desktop desk = context.getBean("comp2", Desktop.class);
     }
 }

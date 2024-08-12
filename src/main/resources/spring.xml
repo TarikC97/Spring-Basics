@@ -13,10 +13,13 @@
 <!--        <constructor-arg index="1" ref="laptop1" />-->
 <!--        <constructor-arg index="0" value="115" />-->
         <property name="age" value="115" />
-<!--        <property name="comp" ref="comp" />-->
+        <property name="comp">
+            <bean id="comp" class="com.tarikc.Laptop" primary="true">
+            </bean>
+        </property>
     </bean>
-    <bean id="comp" class="com.tarikc.Laptop" primary="true">
-    </bean>
+<!--    <bean id="comp" class="com.tarikc.Laptop" primary="true">-->
+<!--    </bean>-->
     <bean id="comp2" class="com.tarikc.Desktop" lazy-init="true">
     </bean>
 
