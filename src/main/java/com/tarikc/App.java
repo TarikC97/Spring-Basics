@@ -15,6 +15,9 @@ public class App
         Desktop desktop = context.getBean(Desktop.class);
         desktop.compile();
 
+        Desktop desktop2 = context.getBean(Desktop.class);
+        desktop.compile();
+
 
         //Xml Base Config
 //        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
