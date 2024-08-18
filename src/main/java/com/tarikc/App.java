@@ -12,11 +12,15 @@ public class App
         //Java Base Config
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
-        Desktop desktop = context.getBean(Desktop.class);
-        desktop.compile();
+        Student stud =(Student) context.getBean(Student.class);
+        System.out.println(stud.getAge());
+        stud.code();
 
-        Desktop desktop2 = context.getBean(Desktop.class);
-        desktop.compile();
+//        Desktop desktop = context.getBean(Desktop.class);
+//        desktop.compile();
+//
+//        Desktop desktop2 = context.getBean(Desktop.class);
+//        desktop.compile();
 
 
         //Xml Base Config
