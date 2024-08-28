@@ -1,11 +1,15 @@
 package com.tarikc;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Student {
 
     private int age;
+    @Autowired
+    @Qualifier("laptop")
     private Computer comp;
 
     public Student(){}
@@ -26,6 +30,7 @@ public class Student {
     public Computer getComp() {
         return comp;
     }
+//    @Autowired
     public void setComp(Computer comp) {
         this.comp = comp;
     }
