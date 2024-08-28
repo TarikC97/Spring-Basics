@@ -9,6 +9,8 @@ public class App
     public static void main( String[] args )
     {
 
+        //Spring to SpringBoot
+
         //Java Base Config
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
